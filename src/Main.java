@@ -36,12 +36,10 @@ public class Main {
             System.out.println(" Месяц " + m + " сумма накоплений равна " + total);
         }
         //Задача 9
-        int payNew = 29000;
-        int totalNew = 0;
+        double totalNew = 0;
+        double persent = 0.01;
         for (int n = 1; n <= 12; n++) {
-            totalNew = totalNew + totalNew/100;
-            totalNew = totalNew + payNew;
-
+            totalNew = (totalNew + pay) * (1 + persent);
             System.out.println("Месяц " + n + " сумма накоплений равна " + totalNew + " руб.");
         }
 
